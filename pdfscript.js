@@ -175,7 +175,6 @@ function drawRecs(x,y,size,n){
   for (var i=0; i<n; i++){
     if (recs[i]!=undefined){
       nY = y+spacing+size*i*2.6
-      console.log(nY)
       doc.fontSize(size)
          .font("Oswald")
          .fill(black)

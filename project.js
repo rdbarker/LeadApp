@@ -101,6 +101,11 @@ function generate(){
     if (formWeights[formKey]==1){ //facebook etc
       maxScore+=1
       maxSocScore+=1
+      if(formDoc[formKey].value!=""){
+        score +=1
+        socScore +=1
+      }
+      
     }
     else{  //everything else
       maxScore+=findMax(formWeights[formKey])
@@ -123,7 +128,6 @@ function generate(){
   finalWebScore = Math.round(webScore/maxWebScore*100)
   finalConScore = Math.round(conScore/maxConScore*100)
   finalSocScore = Math.round(socScore/maxSocScore*100)
-  console.log(formDoc["lc-webTraffic"].value)
   //calcRates
   function calcMonths(obj){
     var trafficGrowing = parseInt(traffic)
@@ -140,7 +144,6 @@ function generate(){
                 ["Customers",customersGrowing]]
       months.push(objTemp)
     }
-      console.log(JSON.stringify(months))
       return months
 
   }
