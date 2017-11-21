@@ -171,7 +171,11 @@ function generate(){
     "trafficGrowth" : trafficGrowth - ((trafficGrowth - trafficGrowthMax) * scoreDec),
     "vtc" : vtcMax - ((vtcMax - vtc)*(scoreDec)),
     "ctm" : ctmMax - ((ctmMax - ctm)*scoreDec),
-    "mtc" : mtcMax - ((mtcMax - mtc)*scoreDec)
+    "mtc" : mtcMax - ((mtcMax - mtc)*scoreDec),
+    "score": finalScore/100,
+    "webScore": finalWebScore/100,
+    "conScore": finalConScore/100,
+    "socScore": finalSocScore/100
   }
   rates["months"] = calcMonths(rates)
   generatePdf(rates,genRecs())
