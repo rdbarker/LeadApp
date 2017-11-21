@@ -33,7 +33,7 @@ var files = {
     url: 'https://cdn2.hubspot.net/hubfs/431273/LeadApp_Assets/Oswald-Regular.ttf',
   },
   logo: {
-    url: 'http://127.0.0.1:5500/pdfkit-setup//logo.png',
+    url: 'https://github.com/rdbarker/leadapp/blob/master/logo.png',
   }
 };
 var filesLoaded = 0;
