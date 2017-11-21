@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rocks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontello.css">
+    <link rel="stylesheet" href="project.css">
+  </head>
+  <body>
+
+    <div class="lc-wrapper">
+
+      <div id="progress">
+        <span id="progress-bar" class="stripes"></span>
+      </div>
+
+      <h1 class="lc-header">This is the Header</h1>
+
+      <form id="lc-form" >
+        <fieldset>
+          <label for="lc-webAnt" class="question">Are you using website antalytics?</label>
+          <div class="btn-group" id="lc-btns-webAnt">
+            <label class="radio-btn">
+              <input type="radio" name="lc-webAnt" value="Yes">
+              <span class="btn btn-yes">
+                <i class="fa fa-thumbs-up  ">
+                </i>Yes
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webAnt" value="No">
+              <span class="btn btn-no">
+                <i class="fa fa-thumbs-down  "></i>
+                No
+              </span>
+            </label>
+
+            <label class="radio-btn">
+              <input type="radio" name="lc-webAnt" value="Notsure">
+              <span class="btn btn-notsure">
+                <i class="fa fa-question  "></i>
+                Not Sure
+              </span>
+            </label>
+          </div>
+        </fieldset>
+          <fieldset>
+          <label for="lc-webTraffic" class="question">How much traffic on average does your website recieve every month?</label>
+          <div class="btn-group" id="lc-btns-webTraffic">
+            <label class="radio-btn">
+              <input type="radio" name="lc-webTraffic" value="1000">
+              <span class="btn btn-low-traffic">
+                <i class="fa icon-signal-low  "></i>
+                0 - 2,000
+              </span>
+            </label>
+
+            <label class="radio-btn">
+              <input type="radio" name="lc-webTraffic" value="4500">
+              <span class="btn btn-mid-traffic">
+                <i class="fa icon-signal-mid  "></i>
+                2,000 - 7,000
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webTraffic" value="11000">
+              <span class="btn btn-high-traffic">
+                <i class="fa icon-signal-high  "></i>
+                7,000 - 15,000
+              </span>
+            </label>
+
+            <label class="radio-btn">
+              <input type="radio" name="lc-webTraffic" value="20000">
+              <span class="btn btn-highest-traffic">
+                <i class="fa fa-signal  "></i>
+                15,000 - 25,000
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webTraffic" value="1000">
+              <span class="btn btn-notsure">
+                <i class="fa fa-question  "></i>
+                Not Sure
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="lc-require">
+          <label for="lc-webMoz" class="question">Do you know your Moz score?</label>
+          <div class="btn-group" id="lc-btns-webMoz">
+            <label class="radio-btn">
+              <input type="radio" name="lc-webMoz" value="Yes">
+              <span class="btn btn-yes">
+                <i class="fa fa-thumbs-up  "></i>
+                Yes
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webMoz" value="No">
+              <span class="btn btn-no">
+                <i class="fa fa-thumbs-down  "></i>
+                No
+              </span>
+            </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div require="lc-webMoz">
+              <label for="lc-mozScore" class="question">Great! What's your Moz score?</label>
+              <div class="input-wrapper">
+              <input type="number" name="lc-mozScore" class="text-input" placeholder="00">
+              <div class="btn-action-group">
+                <input type="button" name="submit" class="lc-next btn-action" value="Next">
+            </div>
+            </div>
+          </div>
+          </fieldset>
+          <fieldset class="lc-require">
+          <label for="lc-webMonLeads" class="question">Do you generate leads from your website every month?</label>
+          <div class="btn-group" id="lc-btns-webMonLeads">
+            <label class="radio-btn">
+              <input type="radio" name="lc-webMonLeads" value="Yes">
+              <span class="btn btn-yes">
+                <i class="fa fa-thumbs-up  "></i>
+                Yes
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webMonLeads" value="No">
+              <span class="btn btn-no">
+                <i class="fa fa-thumbs-down  "></i>
+                No
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webMonLeads" value="Notsure">
+              <span class="btn btn-notsure">
+                <i class="fa fa-question  "></i>
+                Not Sure
+              </span>
+            </label>
+          </div>
+          </fieldset>
+          <fieldset>
+          <div require="lc-webMonLeads">
+          <label for="lc-webTraffic" class="question">What percentage of your leads convert to customers?</label>
+          <div class="btn-group" id="lc-btns-webConLeads">
+            <label class="radio-btn">
+              <input type="radio" name="lc-webConLeads" value="LessThan10">
+              <span class="btn btn-low-traffic">
+                <i class="fa fa-user  "></i>
+                Less than 10%
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webConLeads" value="11to20">
+              <span class="btn btn-mid-traffic">
+                <i class="fa icon-user-two  "></i>
+                11% - 20%
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-webConLeads" value="MoreThan20">
+              <span class="btn btn-high-traffic">
+                <i class="fa fa-users  "></i>
+                Greater than 20%
+              </span>
+            </label>
+          </div>
+        </div>
+
+        </fieldset>
+
+        <fieldset class="lc-require">
+          <label for="lc-conBlog" class="question">Do you have a blog?</label>
+          <div class="btn-group" id="lc-btns-conBlog">
+            <label class="radio-btn">
+              <input type="radio" name="lc-conBlog" value="Yes">
+              <span class="btn btn-yes">
+                <i class="fa fa-thumbs-up  "></i>
+                Yes
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conBlog" value="No">
+              <span class="btn btn-no">
+                <i class="fa fa-thumbs-down  "></i>
+                No
+              </span>
+            </label>
+          </div>
+          </fieldset>
+          <fieldset>
+          <div require="lc-conBlog">
+          <label for="lc-conPost" class="question">How often do you post?</label>
+          <div class="btn-group" id="lc-btns-conPost">
+            <label class="radio-btn">
+              <input type="radio" name="lc-conPost" value="Daily">
+              <span class="btn btn-low-traffic">
+                <i class="fa fa-calendar  "></i>
+                Daily
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conPost" value="Weekly">
+              <span class="btn btn-mid-traffic">
+                <i class="fa fa-calendar  "></i>
+                Weekly
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conPost" value="Monthly">
+              <span class="btn btn-high-traffic">
+                <i class="fa fa-calendar  "></i>
+                Monthly
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conPost" value="Never">
+              <span class="btn btn-never">
+                <i class="fa fa-times  "></i>
+                Never
+              </span>
+            </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="lc-conEmail" class="question">How often do you send e-mail marketing?</label>
+          <div class="btn-group" id="lc-btns-conEmail">
+            <label class="radio-btn">
+              <input type="radio" name="lc-conEmail" value="Weekly">
+              <span class="btn btn-low-traffic">
+                <i class="fa fa-calendar  "></i>
+                Weekly
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conEmail" value="Monthly">
+              <span class="btn btn-mid-traffic">
+                <i class="fa fa-calendar  "></i>
+                Monthly
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conEmail" value="Never">
+              <span class="btn btn-never">
+                <i class="fa fa-times  "></i>
+                Never
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <label for="lc-conOffers" class="question">How many content offers(ebooks, webinars, etc) do you generate on an annual basis?</label>
+          <div class="btn-group" id="lc-btns-webConOffers">
+            <label class="radio-btn">
+              <input type="radio" name="lc-conOffer" value="1">
+              <span class="btn btn-low-traffic">
+                <i class="fa fa-book  "></i>
+                1-5
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conOffers" value="6">
+              <span class="btn btn-mid-traffic">
+                <i class="fa fa-book  "></i>
+                6-15
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conOffers" value="15">
+              <span class="btn btn-high-traffic">
+                <i class="fa fa-book  "></i>
+                15+
+              </span>
+            </label>
+            <label class="radio-btn">
+              <input type="radio" name="lc-conOffers" value="None">
+              <span class="btn btn-never">
+                <i class="fa fa-times  "></i>
+                None
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+           <label for="lc-socTrack" class="question" >Do you track your social media reach?</label>
+           <div class="btn-group" id="lc-btns-socTrack">
+             <label class="radio-btn">
+               <input type="radio" name="lc-socTrack" value="Yes">
+               <span class="btn btn-yes">
+                 <i class="fa fa-thumbs-up  "></i>
+                 Yes
+               </span>
+             </label>
+             <label class="radio-btn">
+               <input type="radio" name="lc-socTrack" value="No">
+               <span class="btn btn-no">
+                 <i class="fa fa-thumbs-down  "></i>
+                 No
+               </span>
+             </label>
+             <label class="radio-btn">
+               <input type="radio" name="lc-socTrack" value="Notsure">
+               <span class="btn btn-notsure">
+                 <i class="fa fa-question  "></i>
+                 Not Sure
+               </span>
+             </label>
+             </div>
+       </fieldset>
+        <fieldset>
+          <label for="lc-socTrack" class="question" >Where are you on social media?</label>
+          <div class="inputs">
+          <div class="input-wrapper">
+           <input type="text" class="input-with-btn input-social btn-facebook text-input" name="lc-socFacebook">
+           <i class="fa fa-facebook input-btn"></i>
+           </div>
+           <div class="input-wrapper">
+           <input type="text" class="input-with-btn input-social btn-twitter text-input" name="lc-socTwitter">
+           <i class="fa fa-twitter input-btn"></i>
+           </div>
+           <div class="input-wrapper">
+           <input type="text" class="input-with-btn input-social btn-linkedin text-input" name="lc-socLinkedin">
+           <i class="fa fa-linkedin input-btn"></i>
+           </div>
+         </div>
+         <div class="btn-action-group">
+           <input type="button" name="submit" class="lc-next btn-action" value="Next">
+       </div>
+       </fieldset>
+        <fieldset id="fieldset-contact">
+          <div class="inputs">
+            <label for="lc-name" class="question question-contact">
+              Your Name</label>
+            <div class="input-wrapper">
+              <input type="text" class="input-with-btn text-input" name="lc-name">
+              <i class="fa fa-user input-btn"></i>
+              </div>
+            <label for="lc-company" class="question question-contact">
+              Your Company's Name</label>
+              <div class="input-wrapper">
+                <input type="text" class="input-with-btn text-input" name="lc-company">
+                <i class="fa fa-users input-btn"></i>
+                </div>
+            <label for="lc-website" class="question question-contact">
+              Your Company's Website Address</label>
+              <div class="input-wrapper">
+                <input type="text" class="input-with-btn text-input" name="lc-website">
+                <i class="fa fa-globe input-btn"></i>
+                </div>
+            <label for="lc-email" class="question question-contact">
+              Your E-mail Address</label>
+              <div class="input-wrapper">
+                <input type="text" class="input-with-btn text-input" name="lc-email">
+                <i class="fa fa-envelope input-btn"></i>
+                </div>
+              </div>
+              <div class="btn-action-group">
+                <input type="button" name="submit" class="lc-next lc-submit btn-action" value="Download Your Free Report!">
+            </div>
+        </fieldset>
+        <fieldset>
+          <h2 class="lc-subheader">Thanks for your interest!</h2>
+          <h2 class="lc-subheader">Your download button will apppear below when it's ready.</h2>
+          <div class="btn-action-group">
+            <div id="lc-loading"><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+              <span class="sr-only">Loading...</span></div>
+            <a type="button" class="btn-action" id="lc-downloadbutton">Download PDF</a>
+        </div>
+        </fieldset>
+      </form>
+
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.11.3.min.js"
+      integrity="sha256-7LkWEzqTdpEfELxcZZlS6wAx5Ff13zZ83lYO2/ujj7g="
+      crossorigin="aNonymous"></script>
+      <script type="text/javascript" src="pdfkit.js"></script>
+      <script type="text/javascript" src="blob-stream.js"></script>
+      <script type="text/javascript" src="pdfscript.js"></script>
+    <script type="text/javascript" src="project.js">
+
+    </script>
+  </body>
+</html>
