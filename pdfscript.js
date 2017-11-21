@@ -33,7 +33,7 @@ var files = {
     url: 'https://cdn2.hubspot.net/hubfs/431273/LeadApp_Assets/Oswald-Regular.ttf',
   },
   logo: {
-    url: 'logo.png',
+    url: 'https://cdn2.hubspot.net/hubfs/431273/Blog_and_Social_Images/social-suggested-images/nrmg_rss_web_logo_small1.png',
   }
 };
 var filesLoaded = 0;
